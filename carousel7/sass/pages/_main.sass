@@ -1,0 +1,141 @@
++comment('general style')
++ic
++comment("home page style")
+.filter
+  padding-bottom: 100px
+  &__heading
+    text-align: center
+    margin-bottom: 40px
+    color: #169bbf
+    font-size: 32px
+    text-transform: uppercase
+  &__control
+    &--active
+      display: none!important
+  &__controls
+    margin-bottom: 20px
+    &--mini
+      width: 290px
+      margin: 
+        left: auto
+        right: auto
+  &__btn
+    display: inline-block
+    padding: 10px 20px
+    margin-right: 15px
+    margin-bottom: 10px
+    +border-radius(4px)
+    border: 0 none
+    +box-shadow(0 0 0 1px #777)
+    background-color: #fff
+    font: 500 14px/16px 'Exo2.0', sans-serif
+    color: #777
+    &:focus
+      outline: none
+    &--active
+      background-color: #1b83af
+      color: #fff
+  &__col
+    box-shadow: 0 0 0 1px #e6e6e6 
+  &__box
+    text-align: center
+    padding: 50px
+  &__image
+    display: inline-block  !important
++rx(767)
+  .filter
+    &__box
+      padding: 8px    
+    &__menu
+      width: 100%
+      background-color: #1b83af 
+      margin: 0
+      +br(0)
+      padding: 0   
+    &__dropdown
+      &--1,
+      &--2
+        display: inline-block  
+        width: 100px
+        height: 43px
+        a
+          display: block
+          height: 100%
+      &--1
+        float: left
+      &--2
+        float: right  
+    &__icon
+      position: absolute
+      top: 50%
+      transform: translate(0, -50%)
+      &--left
+        left: 0
+        margin-left: 25px
+      &--right
+        right: 0
+        margin-right: 25px
+
+    &__btn
+      &--mini
+        color: #fff !important
+        border: 0   
+        padding: 12px 0
+        margin: 0 
+        width: 60px
+        text-align: center
+        cursor: pointer
+        &:hover,
+        &:focus
+        &:visited
+          color: #000
+      &--micro  
+        color: #fff !important
+        padding: 3px 10px !important
+        bottom: 0
+        margin: 0
+        border: 0
+        cursor: pointer
+        +br(0)
+        &:hover,
+        &:focus
+        &:visited
+          color: #000 !important
+  .slick-dots 
+    li    
+      height: auto
+      width: auto
+      button
+        background-color: transparent
+        height: 12px
+        width: 12px
+        +br(50%)
+        padding: 0
+        border: 3px solid #1699bc
+        &:before
+          content: none
+        &:hover
+          background-color: red
+  a.dropdown-toggle
+    position: relative
+    display: block
+    padding: 10px 36px
+    +br(4px)
+    background-color: #1b83af
+    color: #fff
+    cursor: pointer
+    &:focus,
+    &:hover
+      color: #fff
+      text-decoration: none
+  .dropdown-menu>li>a
+    padding: 5px 20px
+    color: #fff
+    &:hover,
+    &:focus
+      color: #fff
+      background-color: #196b8e
+
+
++debug
+

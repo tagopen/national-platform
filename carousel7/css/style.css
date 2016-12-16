@@ -1,0 +1,314 @@
+/* ------------------------------------------------------------------ */
+/* O L D - B R O W S E R    J R E J E C T    N O T I F I C A T I O N  */
+/* ------------------------------------------------------------------ */
+#jr_overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 0;
+  z-index: 2147483646;
+}
+
+#jr_wrap {
+  position: absolute;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  z-index: 2147483647;
+}
+
+#jr_header {
+  display: block;
+  margin: 0;
+  margin-bottom: 0.5em;
+  padding: 5px;
+  padding-bottom: 0;
+  font: bold 1.3em/1 Helvetica, Arial, sans-serif;
+  color: #333;
+}
+
+#jr_inner {
+  position: relative;
+  margin: 0 auto;
+  padding: 20px;
+  height: auto;
+  background: #FFF;
+  border: 1px solid #CCC;
+  color: #4F4F4F;
+  font: 400 12px/1 "Lucida Grande", "Lucida Sans Unicode", Arial, Verdana, sans-serif;
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  box-sizing: content-box;
+}
+#jr_inner p {
+  padding: 5px;
+  margin: 0;
+}
+#jr_inner ul {
+  margin: 0;
+  padding: 0;
+  list-style-image: none;
+  list-style-position: outside;
+  list-style-type: none;
+}
+#jr_inner ul li {
+  margin: 0 10px 10px 10px;
+  padding: 0;
+  width: 120px;
+  height: 122px;
+  float: left;
+  text-align: center;
+  cursor: pointer;
+}
+#jr_inner li a {
+  margin: 0;
+  padding: 0;
+  color: #333;
+  font-size: 0.8em;
+  text-decoration: none;
+}
+#jr_inner li a:hover {
+  text-decoration: underline;
+}
+#jr_inner .jr_icon {
+  margin: 1px auto;
+  padding: 0;
+  width: 100px;
+  height: 100px;
+  background: transparent no-repeat scroll left top;
+  cursor: pointer;
+}
+
+#jr_close {
+  margin: 0;
+  padding: 0;
+  clear: both;
+}
+#jr_close a {
+  display: block;
+  margin: 0;
+  padding: 0;
+  width: auto;
+  color: #000;
+  text-decoration: underline;
+}
+#jr_close p {
+  margin: 0;
+  padding: 10px 0 0 0;
+}
+
+/* ---------------------------------------- */
+/* G E N E R A L    S T Y L E               */
+/* ---------------------------------------- */
+.ic {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: center;
+}
+.ic:before {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+}
+
+/* ---------------------------------------- */
+/* H O M E    P A G E    S T Y L E          */
+/* ---------------------------------------- */
+.filter {
+  padding-bottom: 100px;
+}
+.filter__heading {
+  text-align: center;
+  margin-bottom: 40px;
+  color: #169bbf;
+  font-size: 32px;
+  text-transform: uppercase;
+}
+.filter__control--active {
+  display: none !important;
+}
+.filter__controls {
+  margin-bottom: 20px;
+}
+.filter__controls--mini {
+  width: 290px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.filter__btn {
+  display: inline-block;
+  padding: 10px 20px;
+  margin-right: 15px;
+  margin-bottom: 10px;
+  -moz-border-radius: 4px;
+  -webkit-border-radius: 4px;
+  border-radius: 4px;
+  border: 0 none;
+  -moz-box-shadow: 0 0 0 1px #777;
+  -webkit-box-shadow: 0 0 0 1px #777;
+  box-shadow: 0 0 0 1px #777;
+  background-color: #fff;
+  font: 500 14px/16px "Exo2.0", sans-serif;
+  color: #777;
+}
+.filter__btn:focus {
+  outline: none;
+}
+.filter__btn--active {
+  background-color: #1b83af;
+  color: #fff;
+}
+.filter__col {
+  box-shadow: 0 0 0 1px #e6e6e6;
+}
+.filter__box {
+  text-align: center;
+  padding: 50px;
+}
+.filter__image {
+  display: inline-block !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .filter__box {
+    padding: 8px;
+  }
+  .filter__menu {
+    width: 100%;
+    background-color: #1b83af;
+    margin: 0;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+    padding: 0;
+  }
+  .filter__dropdown--1, .filter__dropdown--2 {
+    display: inline-block;
+    width: 100px;
+    height: 43px;
+  }
+  .filter__dropdown--1 a, .filter__dropdown--2 a {
+    display: block;
+    height: 100%;
+  }
+  .filter__dropdown--1 {
+    float: left;
+  }
+  .filter__dropdown--2 {
+    float: right;
+  }
+  .filter__icon {
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+  }
+  .filter__icon--left {
+    left: 0;
+    margin-left: 25px;
+  }
+  .filter__icon--right {
+    right: 0;
+    margin-right: 25px;
+  }
+  .filter__btn--mini {
+    color: #fff !important;
+    border: 0;
+    padding: 12px 0;
+    margin: 0;
+    width: 60px;
+    text-align: center;
+    cursor: pointer;
+  }
+  .filter__btn--mini:visited {
+    color: #000;
+  }
+  .filter__btn--micro {
+    color: #fff !important;
+    padding: 3px 10px !important;
+    bottom: 0;
+    margin: 0;
+    border: 0;
+    cursor: pointer;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    -ms-border-radius: 0;
+    border-radius: 0;
+  }
+  .filter__btn--micro:visited {
+    color: #000 !important;
+  }
+
+  .slick-dots li {
+    height: auto;
+    width: auto;
+  }
+  .slick-dots li button {
+    background-color: transparent;
+    height: 12px;
+    width: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    border-radius: 50%;
+    padding: 0;
+    border: 3px solid #1699bc;
+  }
+  .slick-dots li button:before {
+    content: none;
+  }
+  .slick-dots li button:hover {
+    background-color: red;
+  }
+
+  a.dropdown-toggle {
+    position: relative;
+    display: block;
+    padding: 10px 36px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    border-radius: 4px;
+    background-color: #1b83af;
+    color: #fff;
+    cursor: pointer;
+  }
+  a.dropdown-toggle:focus, a.dropdown-toggle:hover {
+    color: #fff;
+    text-decoration: none;
+  }
+
+  .dropdown-menu > li > a {
+    padding: 5px 20px;
+    color: #fff;
+  }
+  .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
+    color: #fff;
+    background-color: #196b8e;
+  }
+}
+* {
+  outline: 2px dotted red;
+}
+* * {
+  outline: 2px dotted green;
+}
+* * * {
+  outline: 2px dotted orange;
+}
+* * * * {
+  outline: 2px dotted blue;
+}
+* * * * * {
+  outline: 1px solid red;
+}
+* * * * * * {
+  outline: 1px solid green;
+}
+* * * * * * * {
+  outline: 1px solid orange;
+}
+* * * * * * * * {
+  outline: 1px solid blue;
+}
